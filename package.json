@@ -1,0 +1,34 @@
+{
+  "name": "gulp-converter-character-entities",
+  "version": "1.0.8",
+  "description": "Plugin for replace character entities, example html 2 xml: &nbsp; to &#160",
+  "license": "MIT",
+  "repository": "free6k/gulp-converter-character-entities",
+  "author": {
+    "name": "Salikh Fakhrutdinov",
+    "email": "me@free6k.ru",
+    "url": "https://github.com/free6k"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin xml html characters entities converter nbsp #160"
+  ],
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "mocha": "^2.5.3",
+    "should": "^5.0.0",
+    "stream-assert": "^2.0.1"
+  }
+}
