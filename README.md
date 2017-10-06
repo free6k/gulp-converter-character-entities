@@ -27,11 +27,11 @@ $ npm install --save-dev gulp-converter-character-entities
 ```js
 var gulp = require('gulp');
 var cce = require('gulp-converter-character-entities');
-var my_entity = 
+var my_entity = cce.entities.html2xml;
 
 gulp.task('cmu', function () {
 	return gulp.src('src/file.css')
-		.pipe(cce({entity: my_entity}))
+		.pipe(cce.convert({entity: my_entity}))
 		.pipe(gulp.dest('dist'));
 });
 ```
