@@ -1,6 +1,6 @@
 {
   "name": "gulp-converter-character-entities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin for replace character entities, example html 2 xml: &nbsp; to &#160",
   "license": "MIT",
   "repository": "free6k/gulp-converter-character-entities",
@@ -16,7 +16,8 @@
     "test": "mocha"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "entities/html2xml.json"
   ],
   "keywords": [
     "gulpplugin xml html characters entities converter nbsp #160"
