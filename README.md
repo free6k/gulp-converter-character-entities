@@ -30,7 +30,23 @@ var cce = require('gulp-converter-character-entities');
 var my_entity = cce.entities.html2xml;
 
 gulp.task('cmu', function () {
-	return gulp.src('src/file.css')
+	return gulp.src('src/file.html')
+		.pipe(cce.convert({entity: my_entity}))
+		.pipe(gulp.dest('dist'));
+});
+```
+
+or with **Jade**
+
+```
+var gulp = require('gulp');
+var jade = require('jade');
+var cce = require('gulp-converter-character-entities');
+var my_entity = cce.entities.html2xml;
+
+gulp.task('cmu', function () {
+	return gulp.src('src/file.jade')
+		.pipe(jade())
 		.pipe(cce.convert({entity: my_entity}))
 		.pipe(gulp.dest('dist'));
 });
